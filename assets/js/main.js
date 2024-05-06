@@ -171,3 +171,22 @@ themeButton.addEventListener('click', () => {
     localStorage.setItem('selected-theme', getCurrentTheme())
     localStorage.setItem('selected-icon', getCurrentIcon())
 })
+
+//ANIMACION DE ESCRIBIR
+const text = "Transformando ideas en código con creatividad y precisión.";
+const speed = 50;
+
+let index = 0;
+
+function type() {
+  const currentText = text.substring(0, index);
+
+  document.getElementById("typed-text").textContent = currentText;
+  index++;
+
+  if (index <= text.length) {
+    setTimeout(type, speed);
+  }
+}
+
+document.addEventListener("DOMContentLoaded", type);
