@@ -190,3 +190,10 @@ function type() {
 }
 
 document.addEventListener("DOMContentLoaded", type);
+
+
+//enviar boton
+document.getElementById("enviarBtn").addEventListener("click", function(event) {
+    event.preventDefault();
+    document.getElementById("myForm").submit();
+  });

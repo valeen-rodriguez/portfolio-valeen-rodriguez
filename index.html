@@ -724,7 +724,7 @@
                         </div>
                     </div>
 
-                    <form action="https://formspree.io/f/mvoelwel" method="POST" class="contact__form grid">
+                    <form id="myForm" action="https://formspree.io/f/mvoelwel" method="POST" class="contact__form grid">
                         <div class="contact__inputs grid">
                             <div class="contact__content">
                                 <label for="" class="contact__label">Nombre</label>
@@ -741,12 +741,12 @@
                             <div class="contact__content">
                                 <label for="" class="contact__label">Mensaje</label>
                                 <textarea name="message" id="" cols="0" rows="7" class="contact__input"></textarea>
-                            </div>
+                            </div>                            
 
                             <div>
-                                <a type="submit" class="button button--flex">
-                                    Enviar mensaje
-                                    <i class="uil uil-message button__icon"></i>
+                                <a href="#" class="button button--flex" id="enviarBtn">
+                                  Enviar mensaje
+                                  <i class="uil uil-message button__icon"></i>
                                 </a>
                             </div>
                         </div>
