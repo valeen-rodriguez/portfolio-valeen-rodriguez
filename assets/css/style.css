@@ -303,7 +303,8 @@ img {
 }
 
 .home__blob-img{
-    width: 184px;
+    object-fit: cover;
+    transform: rotate(28deg);
 }
 
 .home__data{
