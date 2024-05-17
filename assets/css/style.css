@@ -305,6 +305,7 @@ img {
 .home__blob-img{
     object-fit: cover;
     transform: rotate(28deg);
+    /*width: 184px*/
 }
 
 .home__data{
