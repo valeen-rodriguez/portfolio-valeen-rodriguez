@@ -172,6 +172,11 @@ themeButton.addEventListener('click', () => {
     localStorage.setItem('selected-icon', getCurrentIcon())
 })
 
+// Icon rotate
+document.getElementById('theme-button').addEventListener('click', function() {
+    this.classList.toggle('rotate');
+});
+
 //ANIMACION DE ESCRIBIR
 const text = "Transformando ideas en código con creatividad y precisión.";
 const speed = 50;
