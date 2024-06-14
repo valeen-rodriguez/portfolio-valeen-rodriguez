@@ -33,6 +33,7 @@
     --h3-font-size: 1.125rem;
     --normal-font-size: .938rem;
     --small-font-size: .813rem;
+    --finish-font-size: .805rem;
     --smaller-font-size: .75rem;
 
     /*========== Font weight ==========*/
@@ -597,6 +598,11 @@ img {
 .qualification__calendar{
     font-size: var(--small-font-size);
     color: var(--text-color-light);
+}
+
+.qualification__finish{
+    font-size: var(--finish-font-size);
+    color: rgb(255, 113, 113);
 }
 
 .qualification__rounder{
