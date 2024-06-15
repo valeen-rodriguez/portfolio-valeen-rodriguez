@@ -289,13 +289,16 @@ img {
     row-gap: 1rem;
 }
 
-.home__social-icon{
+.home__social-icon {
     font-size: 1.25rem;
     color: var(--first-color);
+    transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
 }
 
-.home__social-icon:hover{
+.home__social-icon:hover {
     color: var(--first-color-alt);
+    transform: scale(1.2);
+    filter: drop-shadow(0px 4px 4px #ff649893);
 }
 
 .home__blob{
@@ -356,6 +359,7 @@ img {
     font-size: 1.25rem;
 }
 
+
 /*==================== BUTTONS ====================*/
 .button{
     display: inline-block;
@@ -364,6 +368,7 @@ img {
     padding: 1rem;
     border-radius: .5rem;
     font-weight: var(--font-medium);
+    transition: background-color 0.3s ease;
 }
 
 .button:hover{
@@ -1309,6 +1314,45 @@ img {
         padding: 0;
     }
 
+    .swiper-portfolio-icon {
+        position: relative;
+        font-size: 2rem;
+        color: var(--first-color);
+        display: inline-block;
+        transition: transform 0.3s ease;
+    }
+    
+    .swiper-portfolio-icon:hover {
+        transform: scale(1.1);
+    }
+    
+    .swiper-portfolio-icon::after {
+        content: '';
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: scale(0.9);
+        transition: transform 0.3s ease;
+        z-index: -1;
+    }
+    
+    .swiper-portfolio-icon:hover::after {
+        transform: scale(1);
+    }
+
+    .swiper-button-prev{
+        left: 0px;
+    }
+    
+    .swiper-button-next{
+        right: 0px;
+    }
+    
+    .swiper-horizontal>.swiper-pagination-bullets{
+        bottom: 0px;
+    }
 
     .home__blob{
         width: 320px;
