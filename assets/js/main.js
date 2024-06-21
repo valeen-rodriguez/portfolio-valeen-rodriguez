@@ -190,3 +190,21 @@ document.getElementById("enviarBtn").addEventListener("click", function(event) {
     event.preventDefault();
     document.getElementById("myForm").submit();
   });
+
+
+/*==================== ANIMATION CV DOWNLOAD ====================*/
+document.getElementById('downloadButton').addEventListener('click', function() {
+    var button = document.getElementById('downloadButton');
+    var originalText = button.innerText;
+    var originalIcon = button.querySelector('.button__icon').cloneNode(true);
+    
+    button.innerHTML = 'CV Descargado';
+    var checkIcon = document.createElement('i');
+    checkIcon.className = 'uil uil-file-check-alt';
+    button.appendChild(checkIcon);
+    
+    setTimeout(function() {
+        button.innerHTML = originalText;
+        button.appendChild(originalIcon);
+    }, 3000);
+});

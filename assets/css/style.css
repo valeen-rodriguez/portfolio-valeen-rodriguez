@@ -80,6 +80,167 @@ body.dark-theme{
         --scroll-thumb-color: hsl(var(--hue-color), 12%, 36%);
 }
 
+body.dark-theme .pink-background {
+    background-color: var(--container-color);
+}
+
+/*========== Color ICON Languages ======*/
+.devicon-html5-plain,
+.devicon-css3-plain,
+.devicon-sass-original,
+.devicon-javascript-plain,
+.devicon-react-original,
+.devicon-vitejs-plain,
+.devicon-bootstrap-plain,
+.devicon-nodejs-plain-wordmark,
+.devicon-npm-original-wordmark,
+.devicon-express-original,
+.devicon-sequelize-plain,
+.devicon-mysql-original,
+.devicon-microsoftsqlserver-plain,
+.devicon-figma-plain,
+.devicon-trello-plain,
+.devicon-git-plain,
+.devicon-postman-plain,
+.devicon-photoshop-plain,
+.devicon-bash-plain,
+.devicon-jira-plain,
+.devicon-json-plain{
+        color: white;
+        transition: transform 0.3s ease, color 0.3s ease;
+}
+
+/* Animation Color Icon */
+.devicon-html5-plain:hover {
+    transform: scale(1.1);
+    color: #E34F26;
+}
+
+.devicon-css3-plain:hover {
+    transform: scale(1.1);
+    color: #1572B6;
+}
+
+.devicon-sass-original:hover {
+    transform: scale(1.1);
+    color: #d63083;
+}
+
+.devicon-javascript-plain:hover {
+    transform: scale(1.1);
+    color: #F7DF1E;
+}
+
+.devicon-react-original:hover {
+    transform: scale(1.1);
+    color: #61DAFB;
+}
+
+.devicon-vitejs-plain:hover {
+    transform: scale(1.1);
+    color: #646CFF;
+}
+
+.devicon-bootstrap-plain:hover {
+    transform: scale(1.1);
+    color: #7952B3;
+}
+
+.devicon-nodejs-plain-wordmark:hover {
+    transform: scale(1.1);
+    color: #339933;
+}
+
+.devicon-npm-original-wordmark:hover {
+    transform: scale(1.1);
+    color: #CB3837;
+}
+
+.devicon-json-plain:hover {
+    transform: scale(1.1);
+    color: #303030;
+}
+
+.devicon-express-original:hover {
+    transform: scale(1.1);
+    color: #000000;
+}
+
+.devicon-sequelize-plain:hover {
+    transform: scale(1.1);
+    color: #52B0E7;
+}
+
+.devicon-mysql-original:hover {
+    transform: scale(1.1);
+        color: #4479A1;
+    }
+
+.devicon-microsoftsqlserver-plain:hover {
+    transform: scale(1.1);
+    color: #CC2927;
+}
+
+.devicon-figma-plain:hover {
+    transform: scale(1.1);
+    color: #F24E1E;
+}
+
+.devicon-trello-plain:hover {
+    transform: scale(1.1);
+        color: #1d04bc;
+}
+
+.devicon-git-plain:hover {
+    transform: scale(1.1);
+    color: #F05032;
+}
+
+.devicon-postman-plain:hover {
+    transform: scale(1.1);
+    color: #FF6C37;
+}
+
+.devicon-photoshop-plain:hover {
+    transform: scale(1.1);
+    color: #31A8FF;
+}
+
+.devicon-bash-plain:hover {
+    transform: scale(1.1);
+    color: #000000;
+}
+
+.devicon-jira-plain:hover {
+    transform: scale(1.1);
+    color: #0052CC;
+}
+
+.pink-background {
+    background-color: var(--first-color);
+    padding: 4px 15px;
+    border-radius: 10px 25px;
+    height: 55px;
+    width: 65px;
+    display: inline-block;
+    transition: border-radius 0.3s ease;
+}
+
+.pink-background:hover {
+    border-radius: 10px;
+}
+
+
+.skills__number{
+    display: grid;
+}
+
+/*========== Download Button ==========*/
+.uil-file-check-alt{
+    font-size: 1.25rem;
+    margin-left: var(--mb-0-5);
+}
+
 /*========== Button Dark/Light ==========*/
 .nav__btns{
     display: flex;
@@ -482,14 +643,19 @@ img {
 }
 
 .skills__titles{
-    display:flex;
-    justify-content: space-between;
+    display:grid;
+    /*justify-content: center;*/
     margin-bottom: var(--mb-0-5);
 }
 
-.skills__name{
-    font-size: var(--normal-font-size);
-    font-weight: var(--font-medium);
+.skills__list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.skills__name {
+    font-size: 1.975rem;
 }
 
 .skills__bar,
@@ -502,47 +668,6 @@ img {
     background-color: var(--first-color-lighter);
 }
 
-.skills__percentage{
-    display: block;
-    background-color: var(--first-color);
-}
-
-.skills__html,
-.skills__node,
-.skills__express,
-.skills__css,
-.skills__js,
-.skills__figma,
-.skills__git,
-.skills__photoshop,
-.skills__jira{
-    width: 90%;
-}
-
-.skills__sass{
-    width: 75%;
-}
-
-.skills__mysql{
-    width: 95%;
-}
-.skills__react,
-.skills__vite,
-.skills__sequelize{
-    width: 80%;
-}
-
-.skills__bootstrap{
-    width: 70%;
-}
-
-.skills__postman{
-    width: 60%;
-}
-
-.skills__notion{
-    width: 85%;
-}
 
 .skills__close .skills__list{
     height: 0;
@@ -603,7 +728,7 @@ img {
 }
 
 .qualification__finish{
-    font-size: var(--finish-font-size);
+    font-size: var(--small-font-size);
     color: rgb(255, 113, 113);
 }
 
@@ -1070,6 +1195,12 @@ img {
 }
 
 @media screen and (min-width: 758px) {
+    .skills__list {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+
     .container{
         margin-left: auto;
         margin-right: auto;
@@ -1441,10 +1572,10 @@ img {
       .skills__list {
         padding-left: 0; 
       }
-      
-      .skills__data {
+
+      /*.skills__data {
         margin-bottom: 2rem;
-      }
+      }*/
 
     .home__description::after {
     content: "|";
@@ -1491,5 +1622,53 @@ img {
     
     .change-theme.rotate {
         transform: rotate(360deg);
+    }
+
+    .skills__titles {
+        margin: 0;
+        display: grid;
+        padding: 0;
+    }
+    
+    .pink-background {
+        background-color: var(--first-color);
+        padding: 4px 15px;
+        border-radius: 10px;
+        height: 70px;
+        width: 80px;
+        display: inline-block;
+    }
+
+    .skills__data{
+        padding: 0;
+    }
+
+    .skills__list {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+
+    .skills__name {
+        font-size: 2.975rem;
+        transition: transform 0.3s ease;
+    }
+
+    .skills__name:hover {
+        transform: scale(1.1);
+    }
+
+    .pink-background {
+        background-color: var(--first-color);
+        padding: 4px 15px;
+        border-radius: 10px 25px;
+        height: 70px;
+        width: 80px;
+        display: inline-block;
+        transition: border-radius 0.3s ease;
+    }
+
+    .pink-background:hover {
+        border-radius: 10px;
     }
 }
