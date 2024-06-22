@@ -99,13 +99,14 @@ body.dark-theme .pink-background {
 .devicon-mysql-original,
 .devicon-microsoftsqlserver-plain,
 .devicon-figma-plain,
-.devicon-trello-plain,
+.devicon-github-original,
 .devicon-git-plain,
 .devicon-postman-plain,
 .devicon-photoshop-plain,
 .devicon-bash-plain,
 .devicon-jira-plain,
-.devicon-json-plain{
+.devicon-json-plain,
+.devicon-illustrator-plain{
         color: white;
         transition: transform 0.3s ease, color 0.3s ease;
 }
@@ -186,9 +187,9 @@ body.dark-theme .pink-background {
     color: #F24E1E;
 }
 
-.devicon-trello-plain:hover {
+.devicon-github-original:hover {
     transform: scale(1.1);
-        color: #1d04bc;
+        color: #0f0f0f;
 }
 
 .devicon-git-plain:hover {
@@ -204,6 +205,11 @@ body.dark-theme .pink-background {
 .devicon-photoshop-plain:hover {
     transform: scale(1.1);
     color: #31A8FF;
+}
+
+.devicon-illustrator-plain:hover{
+    transform: scale(1.1);
+    color: #FAA625;
 }
 
 .devicon-bash-plain:hover {
