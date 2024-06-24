@@ -82,6 +82,11 @@ body.dark-theme{
 
 body.dark-theme .pink-background {
     background-color: var(--container-color);
+    transition: filter 0.3s ease-in-out;
+}
+
+body.dark-theme .pink-background:hover {
+    filter: drop-shadow(0px 1px 4px #4a263293);
 }
 
 /*========== Color ICON Languages ======*/
@@ -108,10 +113,9 @@ body.dark-theme .pink-background {
 .devicon-json-plain,
 .devicon-illustrator-plain{
         color: white;
-        transition: transform 0.3s ease, color 0.3s ease;
 }
 
-/* Animation Color Icon */
+/* Animation Color Icon
 .devicon-html5-plain:hover {
     transform: scale(1.1);
     color: #E34F26;
@@ -220,25 +224,45 @@ body.dark-theme .pink-background {
 .devicon-jira-plain:hover {
     transform: scale(1.1);
     color: #0052CC;
-}
+}*/
 
 .pink-background {
     background-color: var(--first-color);
-    padding: 4px 15px;
-    border-radius: 10px 25px;
-    height: 55px;
-    width: 65px;
+    padding: 5px 16px;
+    border-radius: 10px;
+    height: 64px;
+    width: 74px;
     display: inline-block;
-    transition: border-radius 0.3s ease;
+    transition: border-radius 0.3s ease, filter 0.3s ease-in-out;
 }
 
 .pink-background:hover {
-    border-radius: 10px;
+    border-radius: 10px 25px;
+    filter: drop-shadow(0px 1px 4px #ff649893);
 }
 
 
 .skills__number{
     display: grid;
+}
+
+.skills__data {
+    position: relative;
+    display: inline-block;
+}
+
+.tooltip {
+    opacity: 0;
+    transform: translateY(10px);
+    bottom: -20px;
+    left: 0;
+    transition: all 0.3s ease;
+}
+
+.skills__titles:hover .tooltip {
+    opacity: 1;
+    transform: translateY(0);
+    bottom: -40px;
 }
 
 /*========== Download Button ==========*/
@@ -473,7 +497,7 @@ img {
 .home__blob-img{
     object-fit: cover;
     transform: rotate(28deg);
-    /*width: 184px*/
+    /*width: 205px*/
 }
 
 .home__data{
@@ -645,7 +669,7 @@ img {
 
 .skills__list{
     row-gap: 1.5rem;
-    padding-left: 2.7rem;
+    padding-left: 1.7rem;
 }
 
 .skills__titles{
@@ -655,13 +679,14 @@ img {
 }
 
 .skills__list {
+    margin: 0px 20px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
+    gap: 15px;
 }
 
 .skills__name {
-    font-size: 1.975rem;
+    font-size: 2.575rem;
 }
 
 .skills__bar,
@@ -1133,6 +1158,44 @@ img {
          }
 }
 
+@media screen and (min-width: 380px){
+    .skills__list {
+        padding: 0px 40px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .pink-background {
+        background-color: var(--first-color);
+        padding: 5px 16px;
+        border-radius: 10px;
+        height: 60px;
+        width: 73px;
+        display: inline-block;
+        transition: border-radius 0.3s ease, filter 0.3s ease-in-out;
+    }
+}
+
+@media screen and (min-width: 480px){
+    .skills__list {
+        padding: 0px 40px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+
+    .pink-background {
+        background-color: var(--first-color);
+        padding: 5px 16px;
+        border-radius: 10px;
+        height: 60px;
+        width: 73px;
+        display: inline-block;
+        transition: border-radius 0.3s ease, filter 0.3s ease-in-out;
+    }
+}
+
 /* For medium devices */
 @media screen and (min-width: 568px){
     .home__content{
@@ -1164,12 +1227,33 @@ img {
         width: 100%;
     }
     
-    .skills__list,
     .portfolio__content,
     .footer__container {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 20px;
+    }
+
+    .skills__list {
+        padding: 0px 40px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+
+    .pink-background {
+        background-color: var(--first-color);
+        padding: 5px 16px;
+        border-radius: 10px;
+        height: 60px;
+        width: 73px;
+        display: inline-block;
+        transition: border-radius 0.3s ease, filter 0.3s ease-in-out;
+    }
+
+    .skills__list {
+        row-gap: 1.5rem;
+        padding-left: 1.5rem;
     }
 
     .qualification__sections{
@@ -1650,9 +1734,10 @@ img {
     }
 
     .skills__list {
+        margin: 0px 42px;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        gap: 20px;
+        gap: 15px;
     }
 
     .skills__name {
@@ -1667,14 +1752,16 @@ img {
     .pink-background {
         background-color: var(--first-color);
         padding: 4px 15px;
-        border-radius: 10px 25px;
+        border-radius: 10px;
         height: 70px;
         width: 80px;
         display: inline-block;
-        transition: border-radius 0.3s ease;
+        box-shadow: white;
+        transition: border-radius 0.3s ease, filter 0.3s ease-in-out;
     }
 
     .pink-background:hover {
-        border-radius: 10px;
+        border-radius: 10px 25px;
+        filter: drop-shadow(0px 1px 4px #ff649893);
     }
 }

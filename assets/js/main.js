@@ -166,7 +166,7 @@ document.getElementById('theme-button').addEventListener('click', function() {
 });
 
 /*==================== TYPING ANIMATION ====================*/
-const text = "Transformando ideas en código con creatividad y precisión.";
+const text = "Desarrolladora web con más de un año de experiencia.";
 const speed = 50;
 
 let index = 0;
