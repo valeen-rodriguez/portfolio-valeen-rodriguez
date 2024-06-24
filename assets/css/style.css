@@ -1223,9 +1223,10 @@ textarea {
     }
     .skills__container {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        /*grid-template-columns: repeat(2, 1fr);*/
         gap: 20px;
     }
+    
     
     .skills__content {
         width: 100%;
@@ -1526,6 +1527,12 @@ textarea {
         .change-theme.rotate {
             transform: rotate(360deg);
         }
+
+        .skills__container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
 }
 /* For large devices */
 
