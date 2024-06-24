@@ -326,6 +326,10 @@ img {
 }
 
 /*==================== REUSABLE CSS CLASSES ====================*/
+textarea {
+    resize: none;
+}
+
 .section {
   padding: 2rem 0 4rem;
 }
