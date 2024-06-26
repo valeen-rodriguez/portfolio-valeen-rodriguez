@@ -265,6 +265,19 @@ body.dark-theme .pink-background:hover {
     bottom: -40px;
 }
 
+/*========== Scroll Animation =========*/
+
+.section {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+.section.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
 /*========== Download Button ==========*/
 .uil-file-check-alt{
     font-size: 1.25rem;
@@ -1395,7 +1408,7 @@ textarea {
         border-radius: 0.5rem;
         justify-self: center;
         align-self: center;
-        animation: floating 3s ease infinite;
+        animation: floating 2.5s ease infinite;
     }
 
     .about__description{
@@ -1588,7 +1601,7 @@ textarea {
     }
 
     .home__social{
-        transform: translateX(-6rem);
+        transform: translateX(-3rem);
     }
 
     .services__container{
@@ -1775,4 +1788,20 @@ textarea {
         border-radius: 10px 25px;
         filter: drop-shadow(0px 1px 4px #ff649893);
     }
+
+    /*@keyframes appear {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+            transform: translateX(0px);
+        }
+    }
+
+    .section {
+        animation: appear linear;
+        animation-timeline: view();
+        animation-range: entry 0% cover 40%;
+    }*/
 }
