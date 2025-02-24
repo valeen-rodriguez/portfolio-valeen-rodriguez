@@ -14,13 +14,13 @@
         <!--==================== CSS ====================-->
         <link rel="stylesheet" href="assets/css/style.css">
         <link rel="icon" href="assets/img/pink-flower-icon-free-png.webp">
-        <title>Portafolio | Valentina Rodriguez</title>
+        <title>Valentina Rodriguez | Full Stack Dev</title>
     </head>
     <body>
         <!--==================== HEADER ====================-->
         <header class="header" id="header">
             <nav class="nav container">
-                <a href="#" class="nav__logo">Valentina</a>
+                <a href="#" class="nav__logo">Portfolio</a>
                 <div class="nav__menu" id="nav-menu">
                     <ul class="nav__list grid">
                         <li class="nav__item">
@@ -70,49 +70,32 @@
         <main class="main">
             <!--==================== HOME ====================-->
             <section class="home section" id="home">
-                <div class="home__container container grid">
-                    <div class="home__content grid">
+                <div class="home__container container">
+                    <div class="home__content">
+                        
+                        <div class="home__img">
+                            <div class="home__img-container" id="img-principal">
+                                <img src="assets/img/fotoPerfil2.png" alt="Foto Perfil">
+                            </div>
+                        </div>
+            
+                        <div class="home__data">
+                            <h1 class="home__title">Valentina Rodriguez</h1>
+                            <h3 class="home__subtitle" id="typed-text"></h3>
+                        </div>
+            
                         <div class="home__social">
                             <a href="https://www.linkedin.com/in/rodriguez-valentina/" target="_blank" class="home__social-icon">
                                 <i class="uil uil-linkedin-alt"></i>
                             </a>
-    
-                            <!--==================== <a href="" class="home__social-icon">
-                                <i class="uil uil-dribbble"></i>
-                            </a>====================-->
-    
+            
                             <a href="https://github.com/valeen-rodriguez" target="_blank" class="home__social-icon">
                                 <i class="uil uil-github-alt"></i>
                             </a>
-                            
                         </div>
                         
-                        
-                        <div class="home__img">
-                            <svg class="home__blob" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                <mask id="mask0" mask-type="alpha">
-                                    <circle cx="100" cy="100" r="100"/>
-                                </mask>
-                                <g mask="url(#mask0)">
-                                    <circle cx="100" cy="100" r="100" />
-                                    <image class="home__blob-img" x='41.5' y='-60' width="204px" height="205px" xlink:href="assets/img/fotoPerfil2.png"/>
-                                    <!--<image class="home__blob-img" x="39.5" y="-39" width="153px" height="168px" xlink:href="assets/img/fotoPerfil2.png"></image>-->
-                                </g>
-                            </svg>
-                        </div>
-                        
-                        
-                        
-                        
-                        <div class="home__data">
-                            <h1 class="home__title"> Valentina Rodriguez</h1>
-                            <h3 class="home__subtitle">Full Stack Developer</h3>
-                            <p class="home__description" id="typed-text"></p>
-                            <a href="#contact" class="button button--flex">
-                                Contactame <i class="uil uil-message button__icon"></i>
-                            </a>
-                        </div>
                     </div>
+                </div>            
 
                     <div class="home__scroll">
                         <a href="#about" class="home__scroll-button button--flex">
@@ -126,13 +109,14 @@
 
             <!--==================== ABOUT ====================-->
             <section class="about section" id="about">
+                <h2 class="section__title"><img class="img__sun_title" src="assets/img/sun-8-xxl.png"></h2>
                 <h2 class="section__title">Sobre mi</h2>
-                <span class="section__subtitle">Mi introducción</span>
+                <span class="section__subtitle"></span>
                 <div class="about__container container grid">
                     <img src="assets/img/fotoAboutMe.png" alt="" class="about__img">
                     <div class="about__data">
                         <p class="about__description">
-                            ¡Hola! Soy Valentina, programadora web fullstack. Me inicié en la programación por mi interés por la lógica y la capacidad de abordar problemas de manera creativa.
+                            ¡Hola! Soy Valentina, programadora Web FullStack y estudiante de Sistemas. Me inicié en la programación por mi interés por la lógica y la capacidad de abordar problemas de manera creativa.
                             <br><br>
                             Soy colaborativa, resolutiva y detallista. Disfruto trabajar en equipo, buscando siempre aprender y mejorar. Me apasiona compartir conocimientos y enfrentar desafíos que me permitan desarrollarme profesionalmente.
                         </p>
@@ -143,7 +127,7 @@
                             </div>
                         </div>
                         <div class="about__buttons">
-                            <a id="downloadButton" download="" href="assets/pdf/Valentina_Rodriguez_CV.pdf" class="button button--flex">
+                            <a id="downloadButton" download="" href="assets/pdf/CV-Valentina Rodriguez.pdf" class="button button--flex">
                                 Descargar CV<i class="uil uil-download-alt button__icon"></i>
                             </a>
                         </div>
@@ -153,8 +137,9 @@
 
             <!--==================== SKILLS ====================-->
             <section class="skills section" id="skills">
+                <h2 class="section__title"><img class="img__sun_title" src="assets/img/sun-8-xxl.png"></h2>
                 <h2 class="section__title">Lenguajes</h2>
-                <span class="section__subtitle">Mi nivel técnico</span>
+                <span class="section__subtitle"></span>
                 
                 <div class="skills__container container grid">
 
@@ -269,6 +254,13 @@
 
                                 <div class="skills__data">
                                     <div class="skills__titles">
+                                        <h3 class="skills__name pink-background"><i class="devicon-insomnia-plain"></i></h3>
+                                        <div class="tooltip">Insomnia</div>
+                                    </div>
+                                </div>
+
+                                <div class="skills__data">
+                                    <div class="skills__titles">
                                         <h3 class="skills__name pink-background"><i class="devicon-json-plain"></i></h3>
                                         <div class="tooltip">JSON</div>
                                     </div>
@@ -287,6 +279,7 @@
                                         <div class="tooltip">Sequelize</div>
                                     </div>
                                 </div>
+
                             </div>
                         </div>
                     </div>
@@ -313,8 +306,8 @@
 
                             <div class="skills__data">
                                 <div class="skills__titles">
-                                    <h3 class="skills__name pink-background"><i class="devicon-azuresqldatabase-plain"></i></h3>
-                                    <div class="tooltip">AzureSQL</div>
+                                    <h3 class="skills__name pink-background"><i class="devicon-postgresql-plain"></i></h3>
+                                    <div class="tooltip">PostgreSQL</div>
                                 </div>
                             </div>
 
@@ -341,13 +334,6 @@
                                     <div class="skills__titles">
                                         <h3 class="skills__name pink-background"><i class="devicon-photoshop-plain"></i></h3>
                                         <div class="tooltip">Photoshop</div>
-                                    </div>
-                                </div>
-
-                                <div class="skills__data">
-                                    <div class="skills__titles">
-                                        <h3 class="skills__name pink-background"><i class="devicon-illustrator-plain"></i></h3>
-                                        <div class="tooltip">Illustrator</div>
                                     </div>
                                 </div>
 
@@ -386,6 +372,13 @@
                                     </div>
                                 </div>
 
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name pink-background"><i class="devicon-eclipse-plain"></i></h3>
+                                        <div class="tooltip">Eclipse</div>
+                                    </div>
+                                </div>
+
                             </div>
                         </div>
                     </div>
@@ -395,14 +388,15 @@
 
             <!--==================== QUALIFICATION ====================-->
             <section class="qualification section" id="qualifications">
-                <h2 class="section__title">Información</h2>
-                <span class="section__subtitle">Preparación de estudios</span>
+                <h2 class="section__title"><img class="img__sun_title" src="assets/img/sun-8-xxl.png"></h2>
+                <h2 class="section__title">Educación</h2>
+                <span class="section__subtitle"></span>
 
                 <div class="qualification__container container">
                     <div class="qualification__tabs">
                         <div class="qualification__button button--flex qualification__active" data-target="#education">
                             <i class="uil uil-graduation-cap qualification__icon"></i>
-                            Estudios y Cursos
+                             Cursos & Experiencia
                         </div>
                     </div>
 
@@ -456,12 +450,13 @@
                                     <span class="qualification__line"></span>
                                 </div>
                             </div>
-                            <!--==================== QUALIFICATION 2 ====================-->
-                            <div class="qualification__data">
+                             <!--==================== QUALIFICATION 2 ====================-->
+                             <div class="qualification__data">
                                 <div></div>
 
                                 <div>
                                     <span class="qualification__rounder"></span>
+                                    <span class="qualification__line"></span>
                                 </div>
                                 
                                 <div>
@@ -469,194 +464,37 @@
                                     <span class="qualification__subtitle">Oracle Next Education</span>
                                     <div class="qualification__calendar">
                                         <i class="uil uil-calendar-alt"></i>
-                                        Junio 2024 - <span class="qualification__finish">{ En curso }</span>
+                                        Junio 2024 - Enero 2025 <!-- <span class="qualification__finish">{ En curso }</span>-->
                                     </div>
                                 </div>
                             </div>
+                            <!--==================== QUALIFICATION 3 ====================-->
+                            <div class="qualification__data">
+                                <div>
+                                    <h3 class="qualification__title">Full Stack Developer</h3>
+                                    <span class="qualification__subtitle">ForIT Sofware Company</span>
+                                    <div class="qualification__calendar">
+                                        <i class="uil uil-calendar-alt"></i>
+                                        Febrero 2025 - <span class="qualification__finish">Actualidad</span>
+                                    </div>
+                                </div>
+                                <div>
+                                    <span class="qualification__rounder"></span>
+                                    
+                                </div>
+                            </div>
+                            
                         </div>
                     </div>
                 </div>
             </section>
 
-            <!--==================== SERVICES ====================-->
-            <!--<section class="services section" id="services">
-                <h2 class="section__title">Servicios</h2>
-                <span class="section__subtitle">Qué ofrezco</span>
-
-                <div class="services__container container grid">-->
-                    <!--==================== SERVICES 1 ====================-->
-                    <!--<div class="services__content">
-                        <div>
-                            <i class="uil uil-arrow services__icon"></i>
-                            <h3 class="services__title">Desarrollo <br> Frontend</h3>
-                        </div>
-
-                        <span class="button button--flex button--small button--link services__button">
-                            Ver más
-                            <i class="uil uil-arrow-right button__icon"></i>
-                        </span>
-
-                        <div class="services__modal">
-                            <div class="services__modal-content">
-                                <h4 class="services__modal-title">Desarrollo <br> Frontend</h4>
-                                <i class="uil uil-times services__modal-close"></i>
-
-                                <ul class="services__modal-services grid">
-                                    <li class="services__modal-service">
-                                        <i class="uil uil-check-circle services__modal-icon"></i>
-                                        <p>Desarrollo sitios web adaptables que se ajustan perfectamente a cualquier dispositivo.</p>
-                                    </li>
-                                    
-                                    <li class="services__modal-service">
-                                        <i class="uil uil-check-circle services__modal-icon"></i>
-                                        <p>Creación de interfaces intuitivas y accesibles para usuarios.</p>
-                                    </li>
-                                    
-                                    <li class="services__modal-service">
-                                        <i class="uil uil-check-circle services__modal-icon"></i>
-                                        <p>Optimización del rendimiento del sitio para carga rápida.</p>
-                                    </li>
-                                    
-                                    <li class="services__modal-service">
-                                        <i class="uil uil-check-circle services__modal-icon"></i>
-                                        <p>Implementación de animaciones y efectos visuales para una experiencia de usuario mejorada.</p>
-                                    </li>                                    
-                                </ul>
-                            </div>
-                        </div>
-                    </div> -->
-
-                    <!--==================== SERVICES 2 ====================-->
-                    <!-- <div class="services__content">
-                        <div>
-                            <i class="uil uil-web-grid services__icon"></i>
-                            <h3 class="services__title">Desarrollo <br> Backend</h3>
-                        </div>
-
-                        <span class="button button--flex button--small button--link services__button">
-                            Ver más
-                            <i class="uil uil-arrow-right button__icon"></i>
-                        </span>
-
-                        <div class="services__modal">
-                            <div class="services__modal-content">
-                                <h4 class="services__modal-title">Desarrollo <br> Backend</h4>
-                                <i class="uil uil-times services__modal-close"></i>
-
-                                <ul class="services__modal-services grid">
-                                    <li class="services__modal-service">
-                                        <i class="uil uil-check-circle services__modal-icon"></i>
-                                        <p>Creo backend sólido y escalable utilizando Node.js.</p>
-                                    </li>
-                                    
-                                    <li class="services__modal-service">
-                                        <i class="uil uil-check-circle services__modal-icon"></i>
-                                        <p>Desarrollo APIs eficientes y mantenibles con Express.js.</p>
-                                    </li>
-                                    
-                                    <li class="services__modal-service">
-                                        <i class="uil uil-check-circle services__modal-icon"></i>
-                                        <p>Integro y gestiono bases de datos relacionales utilizando Sequelize.</p>
-                                    </li>
-                                    
-                                    <li class="services__modal-service">
-                                        <i class="uil uil-check-circle services__modal-icon"></i>
-                                        <p>Mantenimiento continuo y actualizaciones del backend para garantizar su funcionamiento óptimo.</p>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div> -->
-
-                    <!--==================== SERVICES 3 ====================-->
-                    <!-- <div class="services__content">
-                        <div>
-                            <i class="uil uil-cloud-database-tree services__icon"></i>
-                            <h3 class="services__title">Bases de <br> Datos</h3>
-                        </div>
-
-                        <span class="button button--flex button--small button--link services__button">
-                            Ver más
-                            <i class="uil uil-arrow-right button__icon"></i>
-                        </span>
-
-                        <div class="services__modal">
-                            <div class="services__modal-content">
-                                <h4 class="services__modal-title">Bases de <br> Datos</h4>
-                                <i class="uil uil-times services__modal-close"></i>
-
-                                <ul class="services__modal-services grid">
-                                    <li class="services__modal-service">
-                                        <i class="uil uil-check-circle services__modal-icon"></i>
-                                        <p>Optimización y mantenimiento de bases de datos en MySQL.</p>
-                                    </li>
-                                    
-                                    <li class="services__modal-service">
-                                        <i class="uil uil-check-circle services__modal-icon"></i>
-                                        <p>Diseño y modelado de bases de datos en MySQL para aplicaciones escalables.</p>
-                                    </li>
-                                    
-                                    <li class="services__modal-service">
-                                        <i class="uil uil-check-circle services__modal-icon"></i>
-                                        <p>Administración básica y configuración en Microsoft SQL Server.</p>
-                                    </li>
-                                    
-                                    <li class="services__modal-service">
-                                        <i class="uil uil-check-circle services__modal-icon"></i>
-                                        <p>Desarrollo y optimización de consultas en SQL Server.</p>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div> -->
-                    <!--==================== SERVICES 4 ====================-->
-                    <!-- <div class="services__content">
-                        <div>
-                            <i class="uil uil-pen services__icon"></i>
-                            <h3 class="services__title">Diseño & <br> Apps</h3>
-                        </div>
-
-                        <span class="button button--flex button--small button--link services__button">
-                            Ver más
-                            <i class="uil uil-arrow-right button__icon"></i>
-                        </span>
-
-                        <div class="services__modal">
-                            <div class="services__modal-content">
-                                <h4 class="services__modal-title">Diseño & <br> Apps</h4>
-                                <i class="uil uil-times services__modal-close"></i>
-
-                                <ul class="services__modal-services grid">
-                                    <li class="services__modal-service">
-                                        <i class="uil uil-check-circle services__modal-icon"></i>
-                                        <p>Diseño de interfaces en Figma para prototipos web y móviles.</p>
-                                    </li>
-                                    
-                                    <li class="services__modal-service">
-                                        <i class="uil uil-check-circle services__modal-icon"></i>
-                                        <p>Pruebas de APIs con Postman para asegurar su funcionalidad.</p>
-                                    </li>
-                                    
-                                    <li class="services__modal-service">
-                                        <i class="uil uil-check-circle services__modal-icon"></i>
-                                        <p>Gestión eficiente de proyectos en Jira para seguimiento y colaboración.</p>
-                                    </li>
-                                    
-                                    <li class="services__modal-service">
-                                        <i class="uil uil-check-circle services__modal-icon"></i>
-                                        <p>Edición de imágenes en Photoshop.</p>
-                                    </li>                                 
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>-->
 
             <!--==================== PORTFOLIO ====================-->
             <section class="portfolio section" id="portfolio">
+                <h2 class="section__title"><img class="img__sun_title" src="assets/img/sun-8-xxl.png"></h2>
                 <h2 class="section__title">Proyectos</h2>
-                <span class="section__subtitle">Trabajos más recientes</span>
+                <span class="section__subtitle"></span>
 
                 <div class="porfolio__container container swiper mySwiper">
                     <div class="swiper-wrapper">
@@ -713,20 +551,12 @@
                 </div>
             </section>
 
-            <!--==================== PROJECT IN MIND ====================-->
-            <!--<section class="project section">
-
-            </section>-->
-
-            <!--==================== TESTIMONIAL ====================-->
-            <!--<section>section class="testimonial section">
-                
-            </section>-->
-
             <!--==================== CONTACT ME ====================-->
             <section class="contact section" id="contact">
-                <h2 class="section__title">Contactame</h2>
-                <span class="section__subtitle">¡Pongamonos en contacto!</span>
+                <h2 class="section__title"><img class="img__sun_title" src="assets/img/sun-8-xxl.png"></h2>
+                <h2 class="section__title">Contacto</h2>
+                <span class="section__contact">Para contactarme puede ser vía mail</span>
+                <span class="section__contact_">o completando el formulario</span>
             
                 <div class="contact__container container grid">
                     <div>
@@ -772,43 +602,8 @@
         </main>
 
         <!--==================== FOOTER ====================-->
-        <footer class="footer">
-            <div class="footer__bg">
-                <div class="footer__container container grid">
-                    <div>
-                        <h1 class="footer__title">Valentina</h1>
-                        <span class="footer__subtitle">Desarrolladora Full Stack</span>
-                    </div>
-
-                    <ul class="footer__links">
-                        <li>
-                            <a href="#portfolio" class="footer__link">Proyectos</a>
-                        </li>
-                        <li>
-                            <a href="#skills" class="footer__link">Skills</a>
-                        </li>
-                        <li>
-                            <a href="#contact" class="footer__link">Contactame</a>
-                        </li>
-                    </ul>
-
-                    <div class="footer__socials">
-                        <a href="https://www.linkedin.com/in/rodriguez-valentina/" target="_blank" class="footer__social">
-                            <i class="uil uil-linkedin-alt"></i>
-                        </a>
-
-                        <!--==================<a href="" class="footer__social">
-                            <i class="uil uil-dribbble"></i>
-                        </a>====================-->
-
-                        <a href="https://github.com/valeen-rodriguez" target="_blank" class="footer__social">
-                            <i class="uil uil-github-alt"></i>
-                        </a>
-                    </div>
-                </div>
-
-                <p class="footer__copy">&#169; Todos los derechos reservados</p>
-            </div>
+        <footer id="footer">
+            <p>&#169; Portfolio Valentina 💗</p>
         </footer>
         
         <!--==================== SCROLL TOP ====================-->

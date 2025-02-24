@@ -3,14 +3,14 @@ const navMenu = document.getElementById('nav-menu'),
     navToggle = document.getElementById('nav-toggle'),
     navClose = document.getElementById('nav-close')
 
-/*===== MENU SHOW =====*/
+/*===== SHOW =====*/
 if(navToggle){
     navToggle.addEventListener('click', () => {
         navMenu.classList.add('show-menu')
     })
 }
 
-/*===== MENU HIDDEN =====*/
+/*===== HIDDEN =====*/
 if(navClose){
     navClose.addEventListener('click', () => {
         navMenu.classList.remove('show-menu')
@@ -166,7 +166,7 @@ document.getElementById('theme-button').addEventListener('click', function() {
 });
 
 /*==================== TYPING ANIMATION ====================*/
-const text = "Desarrolladora web con más de un año de experiencia.";
+const text = "Full Stack Developer.";
 const speed = 50;
 
 let index = 0;
