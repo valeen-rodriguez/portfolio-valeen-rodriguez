@@ -116,7 +116,10 @@ body.dark-theme .pink-background:hover {
 .devicon-jira-plain,
 .devicon-json-plain,
 .devicon-insomnia-plain,
-.devicon-eclipse-plain{
+.devicon-eclipse-plain,
+.devicon-typescript-plain,
+.devicon-tailwindcss-original,
+.devicon-storybook-plain{
         color: white;
 }
 
@@ -457,11 +460,12 @@ textarea {
     justify-content: center;
     align-items: center;
     position: relative;
-    transform: rotate(28deg);
+    /*transform: rotate(28deg);*/
 }
 
 
 .home__img-container img {
+    margin-right: 23px;
     width: 100%;
     height: auto;
     object-fit: cover;
@@ -511,7 +515,7 @@ textarea {
 
 .home__blob-img{
     object-fit: cover;
-    transform: rotate(28deg);
+    /*transform: rotate(28deg);*/
     /*width: 205px*/
 }
 
@@ -1949,7 +1953,7 @@ textarea {
         justify-content: center;
         align-items: center;
         position: relative;
-        transform: rotate(28deg);
+        /*transform: rotate(28deg);*/
     }
 
     .home__img {
