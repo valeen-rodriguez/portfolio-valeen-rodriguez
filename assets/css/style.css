@@ -460,7 +460,6 @@ textarea {
     justify-content: center;
     align-items: center;
     position: relative;
-    /*transform: rotate(28deg);*/
 }
 
 
@@ -1953,7 +1952,6 @@ textarea {
         justify-content: center;
         align-items: center;
         position: relative;
-        /*transform: rotate(28deg);*/
     }
 
     .home__img {
