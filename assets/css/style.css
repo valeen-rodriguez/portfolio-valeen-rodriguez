@@ -514,7 +514,6 @@ textarea {
 
 .home__blob-img{
     object-fit: cover;
-    /*transform: rotate(28deg);*/
     /*width: 205px*/
 }
 
