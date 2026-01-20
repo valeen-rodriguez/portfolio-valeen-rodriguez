@@ -522,6 +522,12 @@ textarea {
     grid-column: 1/3;
 }
 
+.qualification__tabs--switch {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
 
 .home__subtitle{
     font-size: var(--h3-font-size);
