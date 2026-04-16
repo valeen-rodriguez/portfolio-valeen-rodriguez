@@ -17,6 +17,13 @@ if(navClose){
     })
 }
 
+function showTab(tabId, el) {
+    document.querySelectorAll('.qualification__content').forEach(c => c.classList.remove('qualification__active'));
+    document.querySelectorAll('.qualification__button').forEach(b => b.classList.remove('qualification__active'));
+    document.getElementById(tabId).classList.add('qualification__active');
+    el.classList.add('qualification__active');
+}
+
 /*==================== REMOVE MENU MOBILE ====================*/
 const navLink = document.querySelectorAll('.nav__link')
 
@@ -166,7 +173,7 @@ document.getElementById('theme-button').addEventListener('click', function() {
 });
 
 /*==================== TYPING ANIMATION ====================*/
-const text = "Full Stack Developer.";
+const text = "Full Stack Developer | Analista QA";
 const speed = 50;
 
 let index = 0;
