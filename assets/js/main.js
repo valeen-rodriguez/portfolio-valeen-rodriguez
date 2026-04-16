@@ -173,7 +173,7 @@ document.getElementById('theme-button').addEventListener('click', function() {
 });
 
 /*==================== TYPING ANIMATION ====================*/
-const text = "Full Stack Developer | Analista QA";
+const text = "Full Stack Developer";
 const speed = 50;
 
 let index = 0;
